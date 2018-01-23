@@ -84,4 +84,10 @@ toolbarseparatordarktheme.png
 <OBIEE_HOME>\user_projects\domains\bifoundation_domain\servers\AdminServer\tmp\_WL_user\analytics_11.1.1\silp1v\war\res
 可以存放一些个性化的图标放在这个文件夹下面然后在BIEE的平台中使用。
 
+* 12.URL地址替换
+更换fmw-welcome,删除原有应用重新部署。 OBIEE\ oracle_common\ modules\ oracle. jrf_11. 1. 1\ fmw-welcome. ear。就可以不使用7001:/analytics来访问了。
+
+* 13.无数据字符替换
+BIEE11\Oracle_BI1\bifoundation\web\msgdb\l_zh-CN\viewmessages.XML中的<WebMessage name="kmsgEVCNoRowsFilters"> 替换为'你选择的条件没有生成任何数据'。
+
 
