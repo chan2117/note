@@ -1,10 +1,10 @@
----
+-----
 
 **连接和操作数据库的方法**
 
----
+-----
 
-* 使用数据库驱动直接连接，我使用的oralce数据库
+* 使用数据库驱动直接连接,使用oracle数据库做示例：
     做一个应用或者建站总是要使用不同的数据库或者其他方式来存贮我们的数据。
     首先要先下载python中支持连接oralce的包cx_Oracle，可以下载安装。
     >[cx_Oracle下载](https://pypi.python.org/pypi/cx_Oracle)
@@ -98,4 +98,4 @@
     >>> admin = User.query.filter_by(username='admin').first()
     <User u'admin'>
     ```
-以上就是两种对数据库连接和操作的方式。
+以上就是两种对数据库连接和操作的方式。其中，使用flask-sqlalchemy的时候只要去变更连接串，就可以实现对不同数据库的操作管理。

@@ -1,16 +1,16 @@
 >工欲善其事，必先利其器具。 ——《论语.卫灵公》
 
----
+-----
 
 **目标：使用FLASK做一个数据可视化小应用。**
 
----
+-----
 
 首先，我们要安装python和flask。
 
 python的安装我们这里就略过了，主要我们要安装flask并且按照flask官方教学来做一个最简单的flask应用。
 
->[flask官网](http://flask.pocoo.org/)   官方网站英文内容
+>[flask官网](http://flask.pocoo.org/)   官方网站英文内容  
 >[flask中文](http://www.pythondoc.com/flask/index.html)  感谢网络上的小伙伴带来的中文翻译
 
 因为我是在windows的环境下做的开发，所以使用liunx环境的话，可能有所不一样。
@@ -72,4 +72,4 @@ flask是一个"微"框架，并不包含数据库抽象层，表单验证或者�
     ![](image/1.png)
     
     
-到这里我们就完成了flask的安装和最小应用的搭建，快速和简单。
+到这里我们就完成了flask的安装和最小应用的搭建，快速而简单。

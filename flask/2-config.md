@@ -1,8 +1,8 @@
----
+-----
 
 **几种配置flask的方法**
 
----
+-----
 >[falsk配置项详解](http://www.pythondoc.com/flask/config.html)
 
 之前，做的那个最小应用是在一个127.0.0.1:5000的地址访问flask的应用。这个是由flask默认的。下面就配置一下，从自己要定义的地址和端口访问。
@@ -32,7 +32,7 @@ class Config(object):   # 上线配置文件
 
 class DevConfig(object):    # 开发配置文件
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'oracle://dw_hos:dw_hos@localhost:1521/orcl'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///D:\code-my\data.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 ```
     
@@ -53,6 +53,3 @@ if __name__ == '__main__':
     app.run(host='192.168.40.7', port=8080)
 ```
 这样就是使用配置文件来对flask进行配置了。
-
-
-    
