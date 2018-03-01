@@ -34,7 +34,7 @@
 
     print(rows)
     ```
-    在控制台就可以看到查询回来的数据库时间了。
+    在控制台就可以看到查询回来的数据库时间了。  
     ![](image/3.png)
     link的方式增删查改都是使用的SQL语句，然后创建oralce的cursor来执行，执行后关闭。
 * 使用Flask-SQLAlchemy管理。

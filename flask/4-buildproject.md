@@ -113,10 +113,10 @@ if __name__ == '__main__':
 
 ```
 
-在IDE中或者CMD中运行 manage.py 
+在IDE中或者CMD中运行 manage.py  
 ![](image/4.png)
     
-demo中申明了一个/hello的页面路由，在浏览器中打开地址就可以看到一下结果。
+demo中申明了一个/hello的页面路由，在浏览器中打开地址就可以看到一下结果。  
 ![](image/5.png)
 
 基本上就完成了项目的初步搭建。
