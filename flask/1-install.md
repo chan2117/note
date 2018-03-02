@@ -24,10 +24,10 @@ virtualenv不仅仅是使用在这一次的flask摆弄中，其功能如名，�
     ```
     在安装成功后，来创建一个虚拟环境。
     ```
-    mkdir python-flask  #创建了一个python-flask的文件夹
-    cd python-falsk       
-    virtualenv env      #在python-flask中创建虚拟环境
-    cd  env\scripts     
+    mkdir datatube  #创建了一个python-flask的文件夹
+    cd datatube       
+    virtualenv .env      #在python-flask中创建虚拟环境
+    cd  .env\scripts     
     activate            #激活虚拟的pyhton环境。
     deactivate          #离开环境
     ```

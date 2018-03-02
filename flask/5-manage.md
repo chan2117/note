@@ -77,8 +77,8 @@
 python manage.py 
 ```
 会看到  
-![](./image/6.png)
-提示高所我们，要用runserver来启动。
+![](./image/6.png)  
+提示告诉我们，要用runserver来启动。
 
 那么输入  
 ```

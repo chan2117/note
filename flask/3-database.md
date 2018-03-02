@@ -14,8 +14,8 @@
     ```
     pip install cx_Oracle xxxxxx # xxxx是你的版本号
     ```
-    **1.要注意的是不同版本的oralce数据库使用的包的版本是不同的**
-    **2.windows系统下可能要你先安装C++环境**
+    **1.要注意的是不同版本的oralce数据库使用的包的版本是不同的**  
+    **2.windows系统下可能要你先安装C++环境**  
     安装完成后，我们创建一个文件，简单测试一下。(创建一个database_link.py)
     ```
     import cx_Oracle
@@ -35,10 +35,10 @@
     print(rows)
     ```
     在控制台就可以看到查询回来的数据库时间了。  
-    ![](image/3.png)
+    ![](image/3.png)  
     link的方式增删查改都是使用的SQL语句，然后创建oralce的cursor来执行，执行后关闭。
 * 使用Flask-SQLAlchemy管理。
-    >[Flask-SQLAlchemy官网](http://flask-sqlalchemy.pocoo.org/2.1/)
+    >[Flask-SQLAlchemy官网](http://flask-sqlalchemy.pocoo.org/2.1/)    
     >[Flask-SQLAlchemy文档中文翻译](http://www.pythondoc.com/flask-sqlalchemy/index.html)
 
     首先给出flask各类数据库的连接字符串格式。格式如下
