@@ -10,7 +10,7 @@ vscode背靠微软帝国，然后有很多好用的插件，我就在安利之�
 *  修改配置文件
 >The upcoming 1.18 release has a new setting `"search.followSymlinks"` that you can set to false as an alternative workaround for this issue. (From[#37000](https://github.com/Microsoft/vscode/issues/37000).)
 
-将search.followSymlinks由true改为false
+将search.followSymlinks由true改为false  
 ![](./image/2.png)
 
 * 修改cnpm的设置
