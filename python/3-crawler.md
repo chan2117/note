@@ -18,7 +18,7 @@ requests.get()用来请求指定URL位置的资源，对应的是HTTP协议的GE
 
 
 爬虫有各式各样的，做个简单的来玩耍一下，下面以爬豆瓣读书上《利用Python进行数据分析》这本书的的[书评](https://book.douban.com/subject/25779298/comments/)作为例子。   
-最简单的爬回来一个页面
+1. 最简单的爬回来一个页面
 ```
 import requests
 
@@ -28,7 +28,32 @@ with open(r'D:\demo.txt', 'w') as file:
 ```
 使用requests模块的get方法，从网站上把一整个页面全都保存到了本地的D盘中的demo.txt文件中。这是一个极度简单的爬虫。其中requests本身自己还有许多属性和方法，可以去官网参考学习。如果需要把爬虫收集回来的数据保存到本地的话，还需要去了解一下文件操作和数据库操作的知识。
 
+2.  去取回一个图片到本地保存
+```
+import requests
 
+r = requests.get('https://www.baidu.com/img/bd_logo1.png')
+with open('c:\\test\\baidu.png', 'wb') as fp:
+    fp.write(r.content)
+	
+```
+
+3. 带头部验证的爬虫
+```
+import requests
+
+re = requests.get('https://www.zhihu.com')
+re.status_code
+```
+直接请求知乎，返回的结果是500，证明没有请求成功。  
+```
+import requests
+
+headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11"}
+re = requests.get('https://www.zhihu.com', headers = headers)
+re.status_code
+```
+输出的结果是200，证明成功的返回了数据。  
 二.把数据解析出来  
 1. 一般的标签网页解析--[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html)
 >安装的时候要注意：Pyhton3要安装BeautifulSoup4才是正常使用的。 
