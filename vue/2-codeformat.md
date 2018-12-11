@@ -32,19 +32,19 @@ export default{
   name: "test"
 }
 ```
-eslint的autofix其实很强，可以自行解决双引号，尾部;的问题。
+eslint的autofix其实很强，可以自行解决双引号，尾部;的问题。按照eslint的规则去自动修复一些问题。     
 ```json
 "eslint.validate": ["javascript", "javascriptreact", {"language":"vue","autoFix": true}],
 "eslint.autoFixOnSave": true,
 ```
-这样配置好，就可以自行快乐的使用了。    
+这样配置好，就可以快乐的使用了。    
 
 ---------
 
 那有小伙伴觉得我不能放弃prettier,我还有其他的东西要格式化，那么看下一种：     
 2. vuter + eslint + prettier
 
-在vscode中setting.json做一些设置：使用下面的配置就可以直接格式化vue文件，保存时候解决space-before-function-parent 这个问题。
+在vscode中setting.json做一些设置：使用下面的配置就可以直接格式化vue文件。
 
 eslint设置 {"language":"vue","autoFix": true} 第一可以检测到vue,第二用eslint解决space-before-function-parent。
 ```json
@@ -52,12 +52,12 @@ eslint设置 {"language":"vue","autoFix": true} 第一可以检测到vue,第二�
 "eslint.autoFixOnSave": true,
 ```
 
-vuter写vue需要的设置
+vuter需要的设置
 ```json
 "vetur.format.defaultFormatter.html": "prettyhtml",
 "vetur.format.defaultFormatter.js": "prettier",
 ```
-<font color="#ce2323">vuter引用格式化工具的时候的配置，例如prettier是要在这里配置,而直接在setting.json中对prettier的设置是无效的。</font>这里的配置让prettier直接就格式化完了基本所有的东西，包括双引号，尾部;的问题，eslint的autofix只是解决了function参数前要插入一个空格的问题。
+**vuter引用格式化工具的时候的配置，例如prettier是要在这里配置,而直接在setting.json中对prettier的设置是无效的。** 这里的配置让prettier直接就格式化完了基本所有的东西，包括双引号，尾部;的问题，eslint的autofix只是解决了function参数前要插入一个空格的问题。
 ```json    
 "vetur.format.defaultFormatterOptions": {
   "prettier": {
