@@ -24,7 +24,8 @@
 调用vuter默认的prettier格式化代码的时候，没有设置的情况下会有单引号和尾部跟;符号的问题。
 如果按照网上的一些方法将vuter的js格式器改为vscode-typescript就可以解决。
 ```json
-"vetur.format.defaultFormatter.js": "vscode-typescript"
+"vetur.format.defaultFormatter.js": "vscode-typescript",
+"javascript.format.insertSpaceBeforeFunctionParenthesis": true
 ```
 这样就解决了VUE中的格式化问题，但是它不会更正你已经存在的字符串的双引号问题。例如：
 ```js
@@ -57,7 +58,8 @@ vuter需要的设置
 "vetur.format.defaultFormatter.html": "prettyhtml",
 "vetur.format.defaultFormatter.js": "prettier",
 ```
-**vuter引用格式化工具的时候的配置，例如prettier是要在这里配置,而直接在setting.json中对prettier的设置是无效的。** 这里的配置让prettier直接就格式化完了基本所有的东西，包括双引号，尾部;的问题，eslint的autofix只是解决了function参数前要插入一个空格的问题。
+**vuter引用格式化工具的时候的配置，例如prettier是要在这里配置,而直接在setting.json中对prettier的设置是无效的。**      
+这里的配置让prettier直接就格式化完了基本所有的东西，包括双引号，尾部;的问题，eslint的autofix只是解决了function参数前要插入一个空格的问题。
 ```json    
 "vetur.format.defaultFormatterOptions": {
   "prettier": {
