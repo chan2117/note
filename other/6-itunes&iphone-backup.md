@@ -8,6 +8,8 @@
 ```
  mklink /j "C:\Users\你的计算机名字\AppData\Roaming\Apple Computer\MobileSync\Backup" "E:\backup"
 ```
+成功后，CMD命令行中会提示，两个文件夹已经链接完成。
+
 * 前面的路径你可以在资源管理器中打开文件夹目录，然后从资源管理器中地址栏直接复制出来。
 * 如果appdata文件夹被隐藏，请在资源管理器中找到文件选项，选择显示隐藏文件夹。
 * 这里E:\backup是后面新建的文件夹，用来真正存贮备份的地方。有区别请填写自行设定的路径。
