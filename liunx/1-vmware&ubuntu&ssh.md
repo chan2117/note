@@ -53,7 +53,7 @@ ssh: connect to hostlocalhost port 22: Connection refused
 ```
 3. 安装openssh-server：
 ```
-sudo apt-getinstall –y openssh-server 
+sudo apt-get install –y openssh-server 
 ```
 4. 安装完成后启动ssh
 ```
